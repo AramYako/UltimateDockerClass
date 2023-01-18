@@ -1,52 +1,14 @@
 # UltimateDockerClass
 
-Code_with_mosh_course
+## Section 1 The Linux
 
-## Section 1, Getting Started (install)
+![image](https://user-images.githubusercontent.com/29054168/213319688-787cce3e-9ba2-428f-8c4e-094282364876.png)
+- root: Current logged in user in shell
+- @9211.... name of the machine
+- / hierarchy
+- "#" Highest privileges
+- "$" Normal privileges (normal user)
 
-Check out docker official documents.
-
-## Section 2, Introduction
-
-1.  Benefit of using Docker:
-
-    - Allowing users to run multiple projects with different dependencies on one machine.
-    - It allows your program to run anywhere (insid e a docker container)
-    - It saves your teammates time and they won't need to spend days on configuring their local development environment.
-    - Docker isloate your environment out so that you will never worry about messing some parts of your local machine. (for example, mess your python on your mac.)
-    - **In short, docker helps you consistently build, run and ship application.**
-
-2.  Container vs. Virtual Machine.  
-    Container == An isolated environment for running an application  
-    Virtual Machine == An abstraction of a machine (physical hardware). For example, you can run a windows VM and a linux VM on a Mac at the same time via a "Hypervisor".
-
-        VM:
-        - Each VM needs a full-blown OS, so its slow to start
-        - Resource intensive, each VM will occupy one of your hardware resources (cpu, memory, disk)
-
-        Containers:
-        - Allow running multiple apps in isolation
-        - Are lightweight (share OS of the host)
-        - Start quickly, and need less hardware resoureces (such as cpu core)
-
-3.  More about Container:  
-    It's a client process that uses Rest API to talk with the Docker engine (server).  
-    All containers share the kernel of the host. And windows, linux, and mac have different kernels. That's why you can only run linux container on a linux machine.
-
-    > kernel = manages applications and hardware resources
-
-4.  What is a Docker Image?
-
-- A cut-down OS
-- A runtime environment
-- Application files
-- Third-party libraries
-- Environment variables
-  > Docker image is a receipt based on which we will build a docker container.
-
----
-
-## Section 3 The Linux
 
 Example, enter a docker container version of ubuntu interactively:
 
